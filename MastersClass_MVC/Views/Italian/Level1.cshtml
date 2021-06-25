@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @model MastersClass_MVC.Models.Courses
+
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link type="text/css" rel="stylesheet" href="~/css/video.css">
+    <title></title>
+</head>
+<body>
+    <div class="card text-center">
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/n-VRntrbypI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-header">
+            Level: @Model.level
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@Model.name</h5>
+            <p class="card-text">@Model.description</p>
+            <a href="#" class="btn btn-primary">Finish The Lesson</a>
+        </div>
+        <div class="card-footer text-muted">
+            @Model.time
+        </div>
+    </div>
+</body>
+</html>
