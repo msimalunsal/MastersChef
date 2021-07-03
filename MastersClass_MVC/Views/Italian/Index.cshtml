@@ -24,7 +24,9 @@
                         <h5 class="card-title">@x.name</h5>
                         <p class="card-text">@x.description</p>
                         <p class="card-text"><small class="text-muted">Video Length: @x.time</small></p>
-                        <button type="button" class="btn btn-outline-primary" href=@x.videolink>Watch Now!</button>
+
+                        <a class="btn btn-outline-primary" href="/Italian/@String.Concat("Level", @x.level)">Watch Now!</a>
+
                     </div>
                 </div>
             </div>

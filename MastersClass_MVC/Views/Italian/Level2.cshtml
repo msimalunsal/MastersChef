@@ -22,7 +22,7 @@
         <div class="card-body">
             <h5 class="card-title">@Model.name</h5>
             <p class="card-text">@Model.description</p>
-            <a href="#" class="btn btn-primary">Finish The Lesson</a>
+            <button type="button" class="btn btn-success" onclick="location.href = '@Url.Action("UpWatchItalian", "Italian", new { levelno = 2 })'" />Finish The Lesson</button>
         </div>
         <div class="card-footer text-muted">
             @Model.time

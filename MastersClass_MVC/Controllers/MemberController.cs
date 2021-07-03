@@ -29,7 +29,7 @@ namespace MastersClass_MVC.Controllers
                 HttpContext.Session.SetInt32("id", user.id);
                 return Redirect("/Home/Index");
             }
-            return Redirect("Index");
+            return Redirect("/Index");
 
         }
 
@@ -43,13 +43,13 @@ namespace MastersClass_MVC.Controllers
             await _context.AddAsync(model);
             await _context.SaveChangesAsync();
 
-            return Redirect("Index");
+            return Redirect("/Home/Index");
         }
 
         public IActionResult LogOut()
         {
             HttpContext.Session.Clear();
-            return Redirect("Index");
+            return Redirect("/Home/Index");
         }
     }
 }

@@ -19,5 +19,8 @@ namespace MastersClass_MVC.Models
         public String videolink { get; set; }
 
         public String imageslink { get; set; }
+        
+        public String category { get; set; }
     }
+
 }

@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @using MastersClass_MVC.Models
+    @model List<Courses>
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    @foreach (var x in Model)
+    {
+        
+        <div class="card mb-3" style="max-width: 1000px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src=@x.imageslink class="img-fluid rounded-start" alt="...">
+             
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">@x.name</h5>
+                        <p class="card-text">@x.description</p>
+                        <p class="card-text"><small class="text-muted">Video Length: @x.time</small></p>
+                         
+                        <a class="btn btn-outline-primary" href="/Turkish/@String.Concat("Level", @x.level)">Watch Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>

@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @using Microsoft.AspNetCore.Http;
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -9,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" ">
             <a class="navbar-brand" href="#">
                 <img src="/images/food.png" width="32" height="32" class="d-inline-block align-top" alt="">
                 Chef's Class
@@ -21,14 +27,25 @@
                 <div class="navbar-collapse collapse" id="navbar10">
                     <ul class="navbar-nav nav-fill w-100">
                         <li class="nav-item">
-                            <a class="nav-link active" href="/Home/About">About</a>
+                            <a class="nav-link active" href="/Home/Index">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Home/Courses">Courses</a>
+                            <a class="nav-link" href="/Home/Courses">Courses</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Member">Sign In</a>
-                        </li>
+
+                        @if (!Context.Session.GetInt32("id").HasValue)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Member">Sign In</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Profile">Profile</a>
+                            </li>
+                        }
+
                     </ul>
                 </div>
             </div>

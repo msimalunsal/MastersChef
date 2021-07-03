@@ -1,5 +1,6 @@
 ﻿using MastersClass_MVC.Filter;
 using MastersClass_MVC.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -10,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace MastersClass_MVC.Controllers
 {
-    [UserFilter]
     public class HomeController : Controller
     {
         
@@ -33,6 +33,10 @@ namespace MastersClass_MVC.Controllers
 
         public IActionResult Courses()
         {
+            if(!HttpContext.Session.GetInt32("id").HasValue)
+            {
+                return Redirect("/Member/Index");
+            }
             return View();
         }
 

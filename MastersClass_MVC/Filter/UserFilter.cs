@@ -18,7 +18,7 @@ namespace MastersClass_MVC.Filter
             {
                 context.Result = new RedirectToRouteResult(new RouteValueDictionary
                 {
-                    {"aciton" , "Index" },
+                    {"action" , "Index" },
                     {"controller" , "Member" }
                 });
             }

@@ -157,3 +157,12 @@ C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcorea
 C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Courses.cshtml.g.cs
 C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Italian\Level2.cshtml.g.cs
 C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Italian\Level3.cshtml.g.cs
+C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Profile\Index.cshtml.g.cs
+C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Turkish\Index.cshtml.g.cs
+C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Turkish\Level1.cshtml.g.cs
+C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Turkish\Level2.cshtml.g.cs
+C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Turkish\Level3.cshtml.g.cs
+C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\FarEast\Index.cshtml.g.cs
+C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\FarEast\Level1.cshtml.g.cs
+C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\FarEast\Level2.cshtml.g.cs
+C:\Users\msima\source\repos\MastersClass_MVC\MastersClass_MVC\obj\Debug\netcoreapp3.1\Razor\Views\FarEast\Level3.cshtml.g.cs
